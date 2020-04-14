@@ -12,40 +12,55 @@ In this example we will be using the PIC16F18446 Sensor Board. The demo has 2 op
 Here are the settings used for MSSP, CLC, FVR, ADCC, CCP, CWG, TMR1 and TMR2. MSSP + CLC are used for the LCD control.
 
 ### MSSP Settings
+
 ![MSSP Settings](images/MSSP1.png)
 
 ### CCL Settings
+
 ![CCL1 Settings](images/CLC1.png)
 
 ![CCL2 Settings](images/CLC2.png)
 
 ### FVR Settings
 FVR is used as positive refference for the ADCC, to get higher accuracy and gain.
+
 ![FVR Settings](images/FVR.png)
 
 ### ADCC settings
+
 ![ADCC Settings](images/ADCC1.png)
+
 ADRPT register is set to 0x40, to average a burst of 64 samples.
+
 ![ADCC Registers](images/ADCC2.png)
 
 ### CCP Settings
 CCP1 is used for generating the buzzer tone.
+
 ![CCP Settings](images/CCP1.png)
+
 CCP2 is used for generating the PWM for the LCD Backlight.
+
 ![CCP Settings](images/CCP1.png)
 
 ### CWG Settings
 CWG is used to output the signal from CCP1 in antiphase on 2 pins, so that the buzzer sounds louder.
+
 ![CWG Settings](images/CWG1.png)
 
 ### TMR Settings
 TMR1 is used to clock the CCP1. It sets the pitch of the buzzer tone.
+
 ![TMR Settings](images/TMR1.png)
+
 TMR2 is used to clock the CCP2 for the LCD Backlight PWM, and also as a timebase for the proximity activity time measurement.
+
 ![TMR Settings](images/TMR2.png)
 
 ### PIN Grid
+
 ![PIN Grid](images/PIN_Grid.png)
 
 ### PIN Module
+
 ![PIN Module](images/PIN_Module.png)
