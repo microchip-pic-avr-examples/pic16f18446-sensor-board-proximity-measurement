@@ -41,7 +41,7 @@ CCP1 is used for generating the buzzer tone.
 
 CCP2 is used for generating the PWM for the LCD Backlight.
 
-![CCP Settings](images/CCP1.png)
+![CCP Settings](images/CCP2.png)
 
 ### CWG Settings
 CWG is used to output the signal from CCP1 in antiphase on 2 pins, so that the buzzer sounds louder.
