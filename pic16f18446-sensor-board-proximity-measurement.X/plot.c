@@ -43,7 +43,7 @@ void drawPlot(plot_t* plot, uint8_t x, uint8_t y, uint8_t h, uint16_t color) {
     
     
     //GFX_FillRectangle(x, y, 128, h, 0x0000);
-    for(uint16_t i=0; i<127; i++) {
+    for(uint8_t i=0; i<127; i++) {
         
         x1 = x+i;
         //x2 = x1+1;

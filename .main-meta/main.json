@@ -2,29 +2,29 @@
     "metaDataVersion": "1.0.0",
     "category": "com.microchip.ide.project",
     "content": {
-        "metaDataVersion": "1.1.0",
+        "metaDataVersion": "1.3.0",
         "name": "com.microchip.mcu8.mplabx.project.pic16f18446-sensor-board-proximity-measurement",
-        "version": "1.0.1",
+        "version": "2.0.0",
         "displayName": "Sensor Board Proximity Measurement",
         "projectName": "pic16f18446-sensor-board-proximity-measurement",
         "shortDescription": "This project shows the reading of a proximity sensor using the ADCC. The sensor is made of a PCB trace on the board perimeter. The proximity sensor is used to detect human activity around the device. If no activity is detected for some time, the display backlight turns OFF, and turns back ON if someone approaches.",
         "ide": {
             "name": "MPLAB X",
-            "semverRange": ">=5.30.0"
+            "semverRange": ">=6.15.0"
         },
         "compiler": [
 			{
 				"name": "XC8",
-				"semverRange": "^2.10.0"
+				"semverRange": "^2.45.0"
 			}
 		],
         "dfp": {
             "name": "PIC16F1xxxx_DFP",
-            "semverRange": "^1.2.99"
+            "semverRange": "^1.21.368"
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=3.95.0"
+            "semverRange": ">=5.3.7"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -37,12 +37,6 @@
             }
         },
         "author": "Microchip",
-        "subcategories": [
-            [
-               "Peripherals",
-			   "ADCC"
-            ]
-        ],
         "peripherals": [
             "ADCC"
         ],

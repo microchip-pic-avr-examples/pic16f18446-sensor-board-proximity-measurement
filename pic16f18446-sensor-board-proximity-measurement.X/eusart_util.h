@@ -31,7 +31,7 @@
 #ifndef EUSART_UTIL_H
 #define	EUSART_UTIL_H
 
-#include "mcc_generated_files/mcc.h"
+#include "mcc_generated_files/system/system.h"
 
 void EUSART1_Puts(uint8_t *str);
 void EUSART1_Putn(int16_t n);

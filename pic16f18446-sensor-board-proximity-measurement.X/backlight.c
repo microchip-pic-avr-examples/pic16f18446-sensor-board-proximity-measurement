@@ -7,7 +7,7 @@
 
 #include "backlight.h"
 #include "stdint.h"
-#include "mcc_generated_files/mcc.h"
+#include "mcc_generated_files/system/system.h"
 
 
 #define BACKLIGHT_TIMER_MAX 1000 // 5s
@@ -21,7 +21,7 @@ uint8_t backlightAlwaysOn;
 
 
 void backlightSet(uint8_t pwm) {
-    PWM2_LoadDutyValue(pwm*1.22);
+    PWM2_LoadDutyValue((uint16_t)(pwm*1.22));
     /*brt = (pwm >> 4) & 0x0F;
     if(brt != oldBrt) {
         EUSART1_Puts("brt ");
@@ -65,7 +65,7 @@ void tick10ms() {
 
 void backlightTimerInit() {   
     backlightTimer = 0;
-    TMR2_SetInterruptHandler(tick10ms);   
+    Timer2_OverflowCallbackRegister(tick10ms);   
 }
 
 

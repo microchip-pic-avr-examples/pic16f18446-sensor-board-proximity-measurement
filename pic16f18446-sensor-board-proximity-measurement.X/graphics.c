@@ -130,9 +130,9 @@ void GFX_DrawPixel(uint8_t x, uint8_t y, uint16_t color)
 // draw a line no matter the values of x and y start and end
 void GFX_DrawLine(uint8_t xStart, uint8_t yStart, uint8_t xEnd, uint8_t yEnd, uint16_t color)
 {
-    uint8_t deltaX = abs(xEnd - xStart);
+    uint8_t deltaX = (uint8_t)abs(xEnd - xStart);
     int8_t  signX  = xStart < xEnd ? 1 : -1;
-    uint8_t deltaY = abs(yEnd - yStart);
+    uint8_t deltaY = (uint8_t)abs(yEnd - yStart);
     int8_t  signY  = yStart < yEnd ? 1 : -1;
     int8_t  error  = (deltaX > deltaY ? deltaX : -deltaY) >> 1;
     int8_t  error2;

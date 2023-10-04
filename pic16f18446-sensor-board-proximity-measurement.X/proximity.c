@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#include "mcc_generated_files/mcc.h"
+#include "mcc_generated_files/system/system.h"
 #include "graphics.h"
 #include "plot.h"
 #include "proximity.h"
@@ -83,7 +83,7 @@ void readProximity(void)
 
 void proximityTurnBacklightOn(void) {
     readProximity();
-   
+    
     if ((proximity12bit+10) < proximityTh) {          
         objectDetected = true;
         proximityTh -= 10;       

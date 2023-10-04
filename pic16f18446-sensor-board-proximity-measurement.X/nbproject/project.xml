@@ -4,12 +4,8 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>pic16f18446-sensor-board-proximity-measurement</name>
-            <creation-uuid>f8907121-fc3a-4239-bc3a-da835f6feef9</creation-uuid>
+            <creation-uuid>1c1bc3f8-e645-47e8-8910-72b321586eca</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions>c</c-extensions>
-            <cpp-extensions/>
-            <header-extensions>h</header-extensions>
-            <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList>

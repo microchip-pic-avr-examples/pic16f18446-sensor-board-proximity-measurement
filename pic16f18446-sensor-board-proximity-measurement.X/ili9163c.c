@@ -43,7 +43,7 @@
 
 
 #include "ili9163c.h"
-#include "mcc_generated_files/mcc.h"
+#include "mcc_generated_files/system/system.h"
 
 // Command defines only useful for this display controller chip
 #define ILI9163C_NOP        0x00    // no operation
@@ -168,7 +168,7 @@ void LCD_Write(uint8_t dcx, uint8_t d) {
     
     // enable HW SDO:
     CLC2POLbits.LC2G2POL = 0;
-    SPI1_Open(SPI1_DEFAULT);
+    SPI1_Open(MSSP1_DEFAULT);
     SPI1_ExchangeByte(d);
     SPI1_Close();
     
