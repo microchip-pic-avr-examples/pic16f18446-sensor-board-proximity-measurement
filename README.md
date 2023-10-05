@@ -16,12 +16,12 @@ In this example the PIC16F18446 Sensor Board is used. The demo has 2 operating m
 
 - [MPLAB® X IDE](http://www.microchip.com/mplab/mplab-x-ide) v6.15 or newer
 - [MPLAB® XC8](http://www.microchip.com/mplab/compilers) v2.45 or newer
-- [MPLAB® Code Configurator (MCC)](microchip.com/mplab/mplab-code-configurator) v5.3.7
+- [MPLAB® Code Configurator (MCC)](https://microchip.com/mplab/mplab-code-configurator) v5.3.7
 - [PIC16F1xxxx_DFP](https://packs.download.microchip.com/) v1.21.368
 
 ## Hardware Used
 
-- [PIC16F18446 Sensor Board Demonstration](https://www.microchip.com/promo/pic16f18446-sensor-board-demonstration)
+- [PIC16F18446 Sensor Board](https://ww1.microchip.com/downloads/en/DeviceDoc/30010172A.pdf)
 <br>
 
 ## Operation
