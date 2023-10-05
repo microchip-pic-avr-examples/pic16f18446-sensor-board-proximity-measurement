@@ -52,14 +52,14 @@ The following configurations must be made for this project:
   - Input Data Sampled At: Middle
   - Clock Source Selection: F<sub>OSC</sub>/4 
 
-  <br><img src="images/mssp1.png" width="600">
+  <br><img src="images/MSSP1.png" width="600">
 
 - CLC:
   - Enable CLC: Yes
   - Operating Mode: AND-OR 
 
-  <br><img src="images/clc1.png" width="600">
-  <br><img src="images/clc2.png" width="600">
+  <br><img src="images/CLC1.png" width="600">
+  <br><img src="images/CLC2.png" width="600">
 
 - FVR:
 <br>FVR is used as positive refference for the ADCC, to get higher accuracy and gain.
@@ -67,7 +67,7 @@ The following configurations must be made for this project:
   - FVR buffer gain to ADC: 1x
   - FVR buffer gain to other peripherals: 1x
 
-  <br><img src="images/fvr.png" width="600">
+  <br><img src="images/FVR.png" width="600">
 
 - ADCC:
   - Enable ADC: Yes
@@ -92,7 +92,7 @@ The following configurations must be made for this project:
   - Select Timer: Timer 1
   - Mode: Toggle_cleartmr
 
-  <br><img src="images/ccp1.png" width="600">
+  <br><img src="images/CCP1.png" width="600">
 
 - CCP2:
 <br>CCP2 is used for generating the PWM for the LCD Backlight.
@@ -102,7 +102,7 @@ The following configurations must be made for this project:
   - Duty Cycle (%): 0
   - CCPR Alignment: right_aligned
 
-  <br><img src="images/ccp2.png" width="600">
+  <br><img src="images/CCP2.png" width="600">
 
 - CWG:
 <br>CWG is used to output the signal from CCP1 in antiphase on 2 pins, so that the buzzer sounds louder.
@@ -111,7 +111,7 @@ The following configurations must be made for this project:
   - Output Mode: Half bridge mode
   - Clock Source: F<sub>OSC</sub>
 
-  <br><img src="images/cwg1.png" width="600">
+  <br><img src="images/CWG1.png" width="600">
 
 - TMR1:
 <br>TMR1 is used to clock the CCP1. It sets the pitch of the buzzer tone.
@@ -121,7 +121,7 @@ The following configurations must be made for this project:
   - External Clock Input Sync: synchronize
   - Timer Period (s): 0.0327675
 
-  <br><img src="images/tmr1.png" width="600">
+  <br><img src="images/TMR1.png" width="600">
 
 - TMR2:
 <br>TMR2 is used to clock the CCP2 for the LCD Backlight PWM, and also as a timebase for the proximity activity time measurement.
@@ -134,10 +134,10 @@ The following configurations must be made for this project:
   - Timer Period (s): 0.01
   - TMR Interrupt Enable: Yes
 
-  <br><img src="images/tmr2.png" width="600">
+  <br><img src="images/TMR2.png" width="600">
 
 - PIN_Grid
-  <br><img src="images/pin_grid.png" width="600">
+  <br><img src="images/PIN_Grid.png" width="600">
 
 - PIN_Module
   <br><img src="images/pins.png" width="600">
