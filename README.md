@@ -1,6 +1,6 @@
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="300"/></a>
 
-# Sensor Board Proximity Measurement
+# Sensor Board Proximity Measurement Using the PIC16F18446 Microcontroller
 
 The PIC16F184xx family has a new Analog-to-Digital Converter with Computation (ADCC) with a 12-bit resolution. This project shows the reading of a proximity sensor using the ADCC. The sensor is made of a PCB trace on the board perimeter. The proximity sensor is used to detect human activity around the device. If no activity is detected for some time, the display backlight turns OFF, and turns back ON if the user approaches the hand.
 
