@@ -2,15 +2,15 @@
 
 # Sensor Board Proximity Measurement
 
-The PIC16F184xx family has a new Analog to Digital Converter with Computation (ADCC) with a 12-bit resolution. This project shows the reading of a proximity sensor using the ADCC. The sensor is made of a PCB trace on the board perimeter. The proximity sensor is used to detect human activity around the device. If no activity is detected for some time, the display backlight turns OFF, and turns back ON if the user approaches the hand.
+The PIC16F184xx family has a new Analog-to-Digital Converter with Computation (ADCC) with a 12-bit resolution. This project shows the reading of a proximity sensor using the ADCC. The sensor is made of a PCB trace on the board perimeter. The proximity sensor is used to detect human activity around the device. If no activity is detected for some time, the display backlight turns OFF, and turns back ON if the user approaches the hand.
 
-In this example the PIC16F18446 Sensor Board is used. The demo has 2 operating modes:
-1. A dynamic interpretation of the user’s hand distance to the sensor is displayed on the LCD;
-2. The buzzer is generating a variable pitch tone, according to the user's hand distance. The PIC reads the proximity sensor, using the ADCC with Capacitive Voltage Division (CVD).
+In this example the PIC16F18446 Sensor Board is used. The demo has two operating modes:
+1. A dynamic interpretation of the user’s hand distance to the sensor is displayed on the LCD
+2. The buzzer generates a variable pitch tone according to the user's hand distance. The PIC reads the proximity sensor using the ADCC with Capacitive Voltage Division (CVD).
 
 ## Related Documentation
 - [PIC16F18446 Product Family Page](https://www.microchip.com/design-centers/8-bit/pic-mcus/device-selection/pic16f18446)
-- [PIC16F18446 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf) for more information or specifications.
+- [PIC16F18446 datasheet](http://ww1.microchip.com/downloads/en/DeviceDoc/40001985B.pdf) for more information.
 
 ## Software Used
 
@@ -26,7 +26,7 @@ In this example the PIC16F18446 Sensor Board is used. The demo has 2 operating m
 
 ## Operation
 
-To program the microcontroller with this MPLAB X project, follow the steps provided in the [How to Program the Microcontroller](#how-to-program-the-microcontroller) chapter.<br><br>
+To program the microcontroller with this MPLAB® X project, follow the steps provided in the [How to Program the Microcontroller](#how-to-program-the-microcontroller) chapter.<br><br>
 
 ## Setup
 
@@ -41,7 +41,7 @@ The following configurations must be made for this project:
 
 - Configuration bits:
   - External Oscillator Selection: Oscillator not enabled
-  - Reset Oscillator Selection: HFINTOSC (1MHz)
+  - Reset Oscillator Selection: HFINTOSC (1 MHz)
 
   <br><img src="images/config_bits.png" width="600">
 
@@ -62,7 +62,7 @@ The following configurations must be made for this project:
   <br><img src="images/CLC2.png" width="600">
 
 - FVR:
-<br>FVR is used as positive refference for the ADCC, to get higher accuracy and gain.
+<br>FVR is used as a positive reference for the ADCC to get higher accuracy and gain.
   - Enable FVR: Yes
   - FVR buffer gain to ADC: 1x
   - FVR buffer gain to other peripherals: 1x
@@ -95,7 +95,7 @@ The following configurations must be made for this project:
   <br><img src="images/CCP1.png" width="600">
 
 - CCP2:
-<br>CCP2 is used for generating the PWM for the LCD Backlight.
+<br>CCP2 is used for generating the Pulse-Width Modulation (PWM) for the LCD Backlight.
   - Enable CCP: Yes
   - CCP Mode: PWM
   - Select Timer: Timer 2
@@ -108,7 +108,7 @@ The following configurations must be made for this project:
 <br>CWG is used to output the signal from CCP1 in antiphase on 2 pins, so that the buzzer sounds louder.
   - Enable CWG: Yes
   - Input Source: CCP1_OUT
-  - Output Mode: Half bridge mode
+  - Output Mode: Half Bridge mode
   - Clock Source: F<sub>OSC</sub>
 
   <br><img src="images/CWG1.png" width="600">
